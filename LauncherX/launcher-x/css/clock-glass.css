@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*----------Clock----------- */
+.clock {
+	background:url(../images/common/shadow.png) no-repeat bottom;
+	padding-bottom:40px;
+	position:relative;
+}
+.clock-inner {
+	background:url(../images/clock-glass/clock-bg.png) no-repeat;
+	width:570px;
+	height:140px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 0px 0px 30px;
+	position:relative;
+}
+.clock-inner p { line-height:20px; }
+.clock-mirror {
+	background:url(../images/clock-glass/clock-mirror.png) no-repeat;
+	width:600px;
+	height:39px;
+	position:absolute;
+	left:100px;
+	bottom:-10px;
+}
+.days {
+	margin-left:10px;
+	margin-right:40px;
+}
+.days, .hours, .minutes, .seconds {
+	text-align:center;
+	float:left;
+	font-size:18px;
+}
+.hours, .minutes {
+	margin-right:36px;
+}
+.seconds { margin:0px; }
+.d-bg {
+	width:130px;
+	height:80px;
+	position:relative;
+}
+.h-bg, .m-bg, .s-bg {
+	width:94px;
+	height:80px;
+	position:relative;
+}
+.second, .second1, .second2, .minute, .hour, .day {
+	font-size:60px;
+	line-height:84px;
+	text-shadow:0px 0px 1px;
+	position:absolute;
+	left:0px;
+	top:-80px;
+	width:90px
+}
+.second1 {
+	width:45px;
+	text-align:right;
+}
+.second2 {
+	width:45px;
+	left:45px;
+	text-align:left;
+}
+.divider {
+	position:absolute;
+	z-index:10;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	left:311px;
+	top:45px;
+	font-size:60px;
+	font-weight:normal;
+	line-height:84px;
+	text-shadow:0px 0px 1px;
+}
+.day { width:130px; }
+.s-wrap, .m-wrap, .h-wrap, .d-wrap {
+	overflow:hidden;
+	width:90px;
+	height:80px;
+	position:relative;
+}
+.d-wrap, .day, .mask3 { width:130px; }
+/*----------- For Blue Theme -----------*/
+body.blue .divider {color:#fff;}
+body.blue .hour,body.blue .minute {color:#d54141;}
+body.blue .days,body.blue .seconds { color:#333; }
+body.blue .hours,body.blue .minutes {color:#9d1616;}
+/*----------- For Red Theme -----------*/
+body.red .divider {color:#d7dd3a;}
+body.red .hour,body.red .minute {color:#d7dd3a;}
+body.red .days,body.red .seconds { color:#fff; }
+body.red .hours,body.red .minutes {color:#d7dd3a;}
+/*----------- For Black Theme -----------*/
+body.black .divider {color:#d7dd3a;}
+body.black .hour,body.black .minute {color:#d7dd3a;}
+body.black .days,body.black .seconds { color:#fff; }
+body.black .hours,body.black .minutes {color:#d7dd3a;}

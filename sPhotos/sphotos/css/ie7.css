@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+#menu {
+	left:50%;
+	width:900px;
+	margin-left:-450px;	
+}
+.menu-link {
+	float:left;
+}
+.submenu li {
+    display:block;
+}
+.link-bg {
+	width:0px;
+	height:0px;
+	background:#000;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	display:none!important;
+}
+.fl-title {
+	color:#fff;
+	font-size:28px;
+	line-height:40px;
+	margin-bottom:20px;
+	padding:0px 20px;
+	height:40px;
+	background:#33B7FE;
+	display:block;
+	margin-left:40px;
+	margin-top:40px;
+	position:relative;
+	width:800px;
+}
+.fl-nav {
+	background:url(../images/layouts/bg-80.png) repeat;
+	line-height:40px;
+	padding:5px 20px;
+	margin-top:0px;
+	font-size:12px;
+	display:block;
+	float:right;
+	height:20px;
+	line-height:20px;
+	position:absolute;
+	right:20px;
+	top:5px;
+	width:230px;
+}
+.fl-nav a {
+	color:#fff;
+	float:left;
+	margin-right:5px;
+	display:block;
+}
+.fl-nav img {
+	display:block;
+}
+.closeFlickr {
+	position:absolute;
+	right:20px;
+	top:5px;
+}

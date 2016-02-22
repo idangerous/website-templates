@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+/*--- Common Rules ---*/
+body {
+	background:#ddd;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	font-size:13px;
+	line-height:1.5em;
+	color:#333;
+}
+p {
+	margin:0px 0px 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0px 0px 10px;
+}
+h2,h3 {
+	font-weight:normal;
+}
+h2 {
+	color:#851c1c;
+	font-size:24px;
+	line-height:30px;
+}
+h3 {
+	font-size:18px;
+}
+a,img {
+	outline:none;
+	border:none;
+}
+.wrapper {
+	width:820px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+/*--- Logo ---*/
+.logo {
+	text-align:center;
+	height:110px;
+}
+/*--- Home & Contacts Buttons ---*/
+#home,#contacts {
+	position:absolute;
+	top:270px;
+}
+#home {
+	left:130px;
+}
+#contacts {
+	right:130px;
+}
+/*--- Content & Error Blocks ---*/
+#content {
+	width:500px;
+	padding-bottom:60px;
+	background:url(../images/404/bg-bot.png) no-repeat left bottom;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	margin-top:100px;
+}
+.content-top {
+	padding-top:20px;
+	background:url(../images/404/bg-top.png) no-repeat left top;
+}
+.content-mid {
+	background:#fff;
+	padding:10px 20px 20px 20px;
+	height:140px;
+}
+.errors {
+	position:absolute;
+	top:430px;
+}
+.error {
+	background:url(../images/404/error-bg.png) no-repeat left top;
+	padding-left:10px;
+	width:240px;
+	display:block;
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	-o-transition-duration:0.3s;
+	-o-transition-property:-o-transform;
+	-o-transform:scale(1,1);
+	-webkit-transition-duration:0.3s;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transform:scale(1,1);
+	-moz-transition-duration:0.3s;
+	-moz-transition-property:-moz-transform;
+	-moz-transform:scale(1,1);
+}
+.zoom {
+	-o-transform:scale(0.9,0.9);
+	-webkit-transform:scale(0.9,0.9);
+	-moz-transform:scale(0.9,0.9);
+}
+.error-r {
+	background:url(../images/404/error-bg.png) no-repeat right bottom;
+	padding-right:10px;
+}
+.error-m {
+	width:210px;
+	background:url(../images/404/error-bg.png) repeat-x left -250px;
+	height:180px;
+	padding:20px 10px 50px 10px;
+}
+/*--- Contact Form ---*/
+#contact-form {
+	display:none;
+}
+#contact-form h3 {
+	font-weight:normal;
+}
+label {
+	display:block;
+	margin-bottom:10px;
+}
+input[type=text],textarea {
+	font-size:inherit;
+	font-family:inherit;
+	border:1px solid #bbb;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+input[type=text] {
+	padding:5px;
+	width:250px;
+}
+textarea {
+	width:300px;
+	padding:2px;
+	height:80px;
+}
+.required {
+	border:1px solid red!important;
+}
+input[type=submit] {
+	border:none;
+	background:#333;
+	color:#fff;
+	font-weight:bold;
+	font-size:inherit;
+	font-family:inherit;
+	padding:5px;
+	cursor:pointer;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+/*--- Ajax Loader ---*/
+.ajax-loader {
+	background:none repeat scroll 0 0 #000000;
+	color:#FFFFFF;
+	font-size:16px;
+	height:30px;
+	left:50%;
+	margin-left:-40px;
+	margin-top:-15px;
+	padding:10px;
+	position:absolute;
+	top:50%;
+	width:70px;
+	z-index:2000;
+	text-align:center;
+	-moz-box-shadow:0px 0px 10px #333;
+	-webkit-box-shadow:0px 0px 10px #333;
+	box-shadow:0px 0px 10px #333;
+}

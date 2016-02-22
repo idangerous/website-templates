@@ -1,0 +1,5 @@
+ErrorDocument 404 http://localhost/404/404.php
+ErrorDocument 403 http://localhost/404/404.php
+ErrorDocument 500 http://localhost/404/404.php
+
+

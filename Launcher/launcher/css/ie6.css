@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* Common Rules */
+.button-m{
+	display: inline-block;
+}
+.button {
+	margin-right:0px;
+}
+input#email {
+	width:280px;
+}
+/*---------- Popup Window ----------- */
+.dark-layer {
+	width:100%;
+}
+/*---------- Social.Bar ----------- */
+.bar-icons {
+	position:relative;
+}
+.bar-icons span {
+	top:-20px;
+}

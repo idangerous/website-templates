@@ -1,0 +1,725 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+@font-face {
+  font-family: 'arial_rounded_mt_boldregular';
+  src: url('../font/arial_rounded_bold-webfont.eot');
+  src: url('../font/arial_rounded_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/arial_rounded_bold-webfont.woff') format('woff'), url('../font/arial_rounded_bold-webfont.ttf') format('truetype'), url('../font/arial_rounded_bold-webfont.svg#arial_rounded_mt_boldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  line-height: 1.5;
+  font-size: 18px;
+  position: relative;
+  color: #777;
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+a {
+  color: #f87e1c;
+  text-decoration: none;
+}
+a:hover {
+  color: #fa9a4d;
+}
+h1 {
+  font-size: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.3;
+  font-weight: 400;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.footer-inner,
+.slide-inner,
+.content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  height: 700px;
+  background-color: #f87e1c;
+  width: 100%;
+  overflow: hidden;
+  color: #000000;
+  position: relative;
+}
+header .bgs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+header .light {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f87e1c;
+  background-image: -moz-radial-gradient(center, ellipse cover, #fffc38 0%, #f87e1c 100%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fffc38), color-stop(100%, #f87e1c));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-radial-gradient(center, ellipse cover, #fffc38 0%, #f87e1c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background-image: -o-radial-gradient(center, ellipse cover, #fffc38 0%, #f87e1c 100%);
+  /* Opera 12+ */
+  background-image: -ms-radial-gradient(center, ellipse cover, #fffc38 0%, #f87e1c 100%);
+  /* IE10+ */
+  background-image: radial-gradient(ellipse at center, #fffc38 0%, #f87e1c 100%);
+  /* W3C */
+  opacity: 0.5;
+}
+header .square-left-top {
+  background: #ffe10f;
+  opacity: 0.7;
+  width: 1000px;
+  height: 400px;
+  left: -400px;
+  top: -180px;
+  position: absolute;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+header .square-left-bottom {
+  background: #f31900;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  left: -600px;
+  bottom: -750px;
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  -o-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  opacity: 0.4;
+}
+header .square-right-top {
+  background: #f31900;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  right: -700px;
+  top: -830px;
+  opacity: 0.5;
+  -webkit-transform: rotate(-71deg);
+  -moz-transform: rotate(-71deg);
+  -ms-transform: rotate(-71deg);
+  -o-transform: rotate(-71deg);
+  transform: rotate(-71deg);
+}
+header .square-right-bottom {
+  background: #ffe10f;
+  opacity: 0.3;
+  width: 1000px;
+  height: 1000px;
+  right: -600px;
+  bottom: -650px;
+  position: absolute;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+/* ==========================================================================
+   Header Slider
+   ========================================================================== */
+.header-slider {
+  height: 100%;
+}
+.header-slider .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.header-slider .slide-inner {
+  position: relative;
+  height: 100%;
+}
+.header-slider .logo {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.header-slider .logo .icon {
+  width: 80px;
+  height: 80px;
+  background: url(../i/icon.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  float: left;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .logo .icon {
+    background-image: url('../i/icon@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .logo .title,
+.header-slider .logo .slogan {
+  font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+  font-weight: normal;
+  margin-left: 100px;
+  line-height: 1.1;
+}
+.header-slider .logo .title {
+  font-size: 40px;
+  padding-top: 5px;
+}
+.header-slider .logo .slogan {
+  font-size: 18px;
+}
+.header-slider .appstore-video {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+.header-slider .appstore-link {
+  width: 250px;
+  height: 75px;
+  display: block;
+  background: url(../i/appstore.png);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  margin-bottom: 20px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .appstore-link {
+    background-image: url('../i/appstore@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .video-link {
+  color: #000000;
+  font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 40px;
+  padding-left: 50px;
+  background: url(../i/video.png) no-repeat left;
+  -webkit-background-size: 40px auto;
+  background-size: 40px auto;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .video-link {
+    background-image: url('../i/video@2x.png');
+    -webkit-background-size: 40px auto;
+    background-size: 40px auto;
+  }
+}
+.header-slider .video-link:hover {
+  opacity: 0.7;
+}
+.header-slider .iphone-wrap {
+  width: 841px;
+  height: 495px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -420px;
+  margin-top: -277px;
+}
+.header-slider .iphone {
+  background: url(../i/iphone.png);
+  width: 841px;
+  height: 495px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .iphone {
+    background-image: url('../i/iphone@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .swiper-pagination {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 30px;
+}
+.header-slider .swiper-pagination-switch {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  cursor: pointer;
+  background: #915302;
+  background: #904304;
+  position: relative;
+  margin: 0 5px;
+  border-radius: 15px;
+}
+.header-slider .swiper-pagination-switch:after {
+  content: ' ';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 7px;
+  height: 7px;
+  background: #904304;
+  border-radius: 10px;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -ms-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.header-slider .swiper-active-switch:after {
+  background: #fffc38;
+}
+.header-slider .check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  margin-right: 550px;
+}
+.header-slider .check-list li {
+  background: url(../i/check.png) no-repeat left top;
+  padding-left: 40px;
+  min-height: 30px;
+  margin: 1em 0px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .check-list li {
+    background-image: url('../i/check@2x.png');
+    -webkit-background-size: 30px 30px;
+    background-size: 30px 30px;
+  }
+}
+.header-slider .iphones {
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+.header-slider .iphone-small {
+  width: 202px;
+  height: 423px;
+  float: left;
+}
+.header-slider .iphone-blue {
+  background: url(../i/iphone-blue.png);
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .iphone-blue {
+    background-image: url('../i/iphone-blue@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .iphone-yellow {
+  background: url(../i/iphone-yellow.png);
+  margin-left: -60px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .iphone-yellow {
+    background-image: url('../i/iphone-yellow@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .iphone-red {
+  background: url(../i/iphone-red.png);
+  margin-left: -60px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .header-slider .iphone-red {
+    background-image: url('../i/iphone-red@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.header-slider .videoframe {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  height: 400px;
+  margin-top: -200px;
+  box-shadow: 0px 0px 50px #462002;
+}
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.content {
+  padding: 0px 0;
+}
+/* ==========================================================================
+   About
+   ========================================================================== */
+.about {
+  margin-top: 70px;
+}
+.about .icon {
+  float: left;
+  width: 200px;
+  height: 200px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background: url(../i/icon.png);
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .about .icon {
+    background-image: url('../i/icon@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.about h1 {
+  margin: 0;
+}
+.about .iphone {
+  float: right;
+  width: 300px;
+  height: 629px;
+  margin: 0px 0 30px 30px;
+  background: url(../i/iphone-v.png);
+  position: relative;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .about .iphone {
+    background-image: url('../i/iphone-v@2x.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+.about .screenshots {
+  width: 251px;
+  height: 444px;
+  position: absolute;
+  left: 26px;
+  top: 93px;
+}
+.about .screenshots img {
+  width: 100%;
+  height: auto;
+}
+.about p:last-of-type {
+  margin-bottom: 0;
+}
+/* ==========================================================================
+   Features
+   ========================================================================== */
+.features {
+  padding: 40px 0;
+  margin: 40px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  overflow: hidden;
+}
+.features .feat {
+  float: left;
+  width: 33%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.features .feat:nth-child(3n+1) {
+  clear: both;
+}
+.features .pic {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  overflow: hidden;
+}
+.features .clear-image {
+  width: 280px;
+  height: 110px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -140px;
+  z-index: 10;
+}
+.features .clear-image img {
+  display: block;
+}
+.features .blur-image {
+  width: 280px;
+  height: 110px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -140px;
+  overflow: hidden;
+  z-index: 20;
+  -webkit-transition-duration: 600ms;
+  -moz-transition-duration: 600ms;
+  -ms-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+.features .blur-image img {
+  position: relative;
+  display: block;
+  top: 0%;
+  -webkit-transition-duration: 600ms;
+  -moz-transition-duration: 600ms;
+  -ms-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+.features .blur-image:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: ' ';
+}
+.features .text {
+  font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  line-height: 1.3;
+  vertical-align: middle;
+  color: #fff;
+  z-index: 40;
+  font-size: 31px;
+  top: 0%;
+  -webkit-transition-duration: 600ms;
+  -moz-transition-duration: 600ms;
+  -ms-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+.features .pic:hover .blur-image,
+.features .pic.hovered .blur-image {
+  top: -100%;
+}
+.features .pic:hover .blur-image img,
+.features .pic.hovered .blur-image img {
+  top: 100%;
+}
+.features .pic:hover .text,
+.features .pic.hovered .text {
+  top: -100%;
+}
+/* ==========================================================================
+   Reviews
+   ========================================================================== */
+.reviews {
+  margin: 40px 0;
+  overflow: hidden;
+}
+.reviews .review {
+  float: left;
+  width: 45%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.reviews .review:nth-child(2n) {
+  float: right;
+}
+.reviews .review:nth-child(2n+1) {
+  clear: both;
+}
+.reviews .star {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #f87e1c url(../i/star.png) no-repeat center;
+}
+@media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .reviews .star {
+    background-image: url('../i/star@2x.png');
+    -webkit-background-size: 50px 50px;
+    background-size: 50px 50px;
+  }
+}
+.reviews .quote {
+  font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 10px 0;
+  color: #000;
+  font-size: 31px;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  background: #f87e1c;
+  text-align: center;
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 20px;
+}
+footer a:hover {
+  color: #773704;
+  opacity: 0.8;
+}
+footer .social {
+  padding: 40px 0;
+  border-bottom: 1px solid #da6507;
+  box-shadow: 0px 1px 0px #fa9a4d;
+}
+footer .copy {
+  font-size: 14px;
+  padding: 20px 0;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}

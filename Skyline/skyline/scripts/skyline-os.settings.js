@@ -1,0 +1,21 @@
+	skyline = {
+		disableCSS3Transforms : false,
+		toolTipShowTime : 600,
+		animateBackground : true,
+		windowColor : "black",
+		defaultWindowWidth : 700,
+		contentWindowToolbar : "ribbon",
+		imageWindowToolbar : "fancy",
+		withScrollBar : true,
+		openWindowTime : 400,
+		minimizeWindowTime : 400,
+		expandWindowTime : 400,
+		rotateWindows : false,
+		windowFromLink : false,
+		replaceFonts : ".cufoned,.toolbar-icon,.window-heading,.inner-heading,.dropcap,.slide-heading,.module-title,.folio-title,.intro-heading",
+		noFadeInIE6_8 : true,
+		showIntro : true,
+		introSlideDuration : 5000,
+		introStartTransform : "scale(0) translate(-700px,0px) rotate(225deg)",
+		introFinalTransform : "scale(1) translate(0px,-150px) rotate(-5deg)"
+	}

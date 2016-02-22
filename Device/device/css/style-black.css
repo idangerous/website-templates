@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+/* --- Common Rules --- */
+body {
+	background:#333 url(../images/layouts-black/bg.png) repeat-x left top;
+	color:#333;
+}
+h2.content-heading {border-bottom:1px dotted #000;}
+a { color:#bb0000; }
+/* --- Slideshow --- */
+#slideshow {
+	background:url(../images/layouts-black/ss-shadow.png) no-repeat bottom;
+	color: #fff;
+}
+#slideshow a {color:#ffb5b5}
+.slide.withBG { background:url(../images/layouts-black/ss-bg.png) repeat-x left top; }
+.slide-left, .slide-right { background:url(../images/layouts-black/arrow-bg.png) no-repeat left top; }
+.slide-heading {
+	color:#fff;
+	text-shadow:0px 0px 1px #fff;
+}
+/* --- Control Panel --- */
+#cp { background:url(../images/layouts-black/logo.png) no-repeat left top; }
+/* --- Window Styling --- */
+.window { color:#333; }
+.toolbar { background:url(../images/black/toolbar.png) no-repeat; }
+.w-tbl { background:url(../images/window-white/window-corners.png) no-repeat left top; }
+.w-tbr { background:url(../images/window-white/window-corners.png) no-repeat right -40px; }
+.w-tbm { background:url(../images/window-white/window-corners.png) repeat-x left -20px; }
+.w-tl { background:url(../images/window-white/window-corners.png) no-repeat left top; }
+.w-tr { background:url(../images/window-white/window-corners.png) no-repeat right -20px; }
+.w-tm { background:url(../images/window-white/window-corners.png) repeat-x left -10px; }
+.w-ml { background:url(../images/window-white/window-left.png) repeat-y left top; }
+.w-mr { background:url(../images/window-white/window-right.png) repeat-y right top; }
+.w-mm { background:url(../images/window-white/window-bg.png) repeat; }
+.w-bl { background:url(../images/window-white/window-corners.png) no-repeat left -60px; }
+.w-br { background:url(../images/window-white/window-corners.png) no-repeat right bottom; }
+.w-bm { background:url(../images/window-white/window-corners.png) repeat-x left -80px; }
+/* --- Window with Image Styling --- */
+.withImage .w-content {
+	background:url(../images/window-white/window-bg.png) repeat;
+	border:none;
+}
+.withImage .toolbar { background:url(../images/black/toolbar-long.png) no-repeat left top; }
+.withImage .image-title { background: url(../images/window-white/window-bg.png) repeat; }
+/* --- Menu --- */
+#menu { color:#fff; }
+.menu-link { color:#fff; }
+/* --- Forms --- */
+input.text, textarea.textarea {
+	border:1px solid #555;
+	background:none;
+	color:#333;
+}
+input.text.required, textarea.textarea.required { color:#f43b3b; }
+input[type=button], input[type=submit], a.button, span.button {
+	border:1px solid #888;
+	background:#999;
+	color:#FFFFFF!important;
+}
+input[type="button"]:hover, input[type="submit"]:hover, a.button:hover, span.button:hover { background:#666; }
+.message-sent { background:url(../images/layouts-black/message-sent.png) no-repeat; }
+.message-error { background:url(../images/layouts-black/message-error.png) no-repeat; }
+/* --- Footer --- */
+#footer { color:#aaa; }
+#footer a { color:#aaa; }
+/* --- Ajax Loader --- */
+.ajax-loader {
+	background:#000;
+	border: 1px solid #FFFFFF;
+	color:#fff;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}

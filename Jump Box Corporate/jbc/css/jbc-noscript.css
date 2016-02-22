@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+#menu li:hover .submenu {
+	display:block;
+}
+.pages, .page {
+	position:relative;
+	overflow:visible;
+	height:100%;
+}
+#slide-prev, #slide-next {
+	display:none;
+}

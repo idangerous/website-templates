@@ -1,0 +1,601 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html, button, input, select, textarea { color: #222 }
+body {
+	font-size: 1em;
+	line-height: 1.4
+}
+::-moz-selection {
+background:#b3d4fc;
+text-shadow:none
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0
+}
+img { vertical-align: middle }
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0
+}
+textarea { resize: vertical }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+	font-family: 'Roboto Condensed Regular';
+	src: url('../font/roboto-condensed-webfont.eot');
+	src: url('../font/roboto-condensed-webfont.eot?#iefix') format('embedded-opentype'),  url('../font/roboto-condensed-webfont.woff') format('woff'),  url('../font/roboto-condensed-webfont.ttf') format('truetype'),  url('../font/roboto-condensed-webfont.svg#roboto_cnregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body { height: 100%; }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+	position: relative;
+	color: #444;
+	min-width: 320px;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+p { margin: 0 0 10px; }
+h1, h2, h3, h4 {
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+h2.title {
+	margin: 0 0 15px;
+	font-size: 36px;
+	line-height: 36px;
+}
+h3.title {
+	font-size: 28px;
+	line-height: 28px;
+	margin: 0 0 15px 0;
+}
+h4.title {
+	margin: 0 0 10px;
+	font-size: 18px;
+	line-height: 18px;
+}
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+.background {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.light {
+	position: absolute;
+	width: 1150px;
+	height: 1150px;
+	margin: -575px 0 0 -575px;
+}
+.light-lt {
+	left: 0;
+	top: 0;
+}
+.light-rb {
+	left: 100%;
+	top: 100%;
+}
+.lights-wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.lights {
+	z-index: 0;
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	margin-left: -400px;
+}
+/* ==========================================================================
+   Card
+   ========================================================================== */
+.card-wrap {
+	width: 800px;
+	margin: 0 auto;
+	height: 400px;
+	z-index: 5;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	margin-left: -400px;
+	overflow:visible !important;
+	-moz-perspective: 1400px;
+	-webkit-perspective: 1400px;
+	-ms-perspective: 1400px;
+	-o-perspective: 1400px;
+	perspective: 1400px;
+}
+.card-bg {
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#f1f1f1));
+	background-image: -webkit-linear-gradient(left, #ffffff, #f1f1f1);
+	background-image: -moz-linear-gradient(left, #ffffff, #f1f1f1);
+	background-image: -o-linear-gradient(left, #ffffff, #f1f1f1);
+	background-image: linear-gradient(to right, #ffffff, #f1f1f1);
+	border-radius: 5px;
+	transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.card {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 110;
+}
+.card-shadow {
+	background: url(../i/layouts/shadow.png) no-repeat left top;
+	position: absolute;
+	width: 919px;
+	height: 47px;
+	bottom: -1px;
+	left: -60px;
+}
+.card-reflection {
+	background: url(../i/layouts/reflect.png) repeat-x left top;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -43px;
+	border-radius: 5px 5px 0 0;
+}
+.card-inner {
+	padding: 30px 50px;
+	display: none;
+}
+/* ==========================================================================
+   Arrows
+   ========================================================================== */
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	z-index: 200;
+}
+.arrow a {
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15px;
+	text-decoration: none;
+	position: absolute;
+	cursor: pointer;
+	white-space: nowrap;
+}
+.arrow:hover a { text-decoration: underline; }
+.arrow-tr {
+	background: url(../i/layouts/arrow-tr.png) no-repeat;
+	width: 55px;
+	height: 63px;
+	right: 5px;
+	top: -20px;
+}
+.arrow-tr a {
+	right: 42px;
+	top: 33px;
+}
+.arrow-bl {
+	background: url(../i/layouts/arrow-bl.png) no-repeat;
+	width: 64px;
+	height: 58px;
+	left: -21px;
+	bottom: 0px;
+}
+.arrow-bl a {
+	left: 67px;
+	top: 18px;
+}
+/* ==========================================================================
+   Details (home) page
+   ========================================================================== */
+.card-inner.page-details { display: block; }
+.photo { float: left; }
+.photo img {
+	display: block;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.no-boxshadow .photo img { border: 1px solid #ccc; }
+.details {
+	padding-top: 5px;
+	margin-left: 130px;
+}
+.details h1, .details h3 {
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.details h1 {
+	font-size: 36px;
+	margin: 0 0 5px;
+	line-height: 36px;
+}
+.details h3 {
+	font-size: 21px;
+	margin: 0 0 15px;
+	line-height: 22px;
+}
+.social a {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 6px;
+	background: url(../i/layouts/icons.png) no-repeat left top;
+}
+.social a.social-tw { background-position: left top; }
+.social a.social-fb { background-position: left -22px; }
+.social a.social-in { background-position: left -44px; }
+.social a.social-mail { background-position: left -66px; }
+.social a:hover { opacity: 0.7; }
+.tabs-links {
+	text-align: right;
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+	margin-top: -20px;
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.tabs-links a {
+	text-decoration: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.tabs-links a:hover { text-decoration: underline; }
+.tabs-links .active {
+	font-size: 32px;
+	text-decoration: none;
+}
+.tabs-links .active:hover { text-decoration: none; }
+body .tabs-links a { color: #444; }
+.tab { display: none; }
+.tab.active { display: block; }
+.card-content {
+	height: 175px;
+	overflow: auto;
+	padding-right: 20px;
+	position: relative;
+	width:100%;
+}
+.card-content h2 {
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0 0 10px;
+	line-height: 32px;
+	font-size: 32px;
+}
+/* ==========================================================================
+   Resume Page
+   ========================================================================== */
+.col-half {
+	width: 47%;
+	margin-right: 6%;
+	margin-bottom: 20px;
+	float: left;
+}
+.col-half.last { margin-right: 0; }
+.cv-item { margin-bottom: 25px; }
+.cv-item h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 18px;
+	line-height: 18px;
+}
+.cv-item h3 span {
+	margin-left: 10px;
+	font-size: 15px;
+	display: inline-block;
+}
+.cv-item h4 {
+	margin: 3px 0 0px;
+	font-size: 15px;
+	line-height: 15px;
+}
+.cv-item h4 span {
+	display: inline-block;
+	margin-right: 10px;
+}
+.cv-item>div { margin: 10px 0 0; }
+.page-cv { padding-top: 50px; }
+.page-cv .scrollPane {
+	height: 280px;
+	width: 720px !important;
+}
+.page-portfolio .scrollPane {
+	height: 250px;
+	width: 720px !important;
+}
+.skill {
+	color: #fff;
+	background: #d5d5d5;
+	font-family: 'Roboto Condensed Regular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0 0 10px;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 5px 10px;
+	position: relative;
+}
+.skill span {
+	position: relative;
+	z-index: 2;
+}
+.skill div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 1;
+}
+.personal p {
+	display: block;
+	overflow: hidden;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ddd;
+}
+.personal p b {
+	float: left;
+	width: 100px;
+}
+.personal p i {
+	margin-left: 110px;
+	display: block;
+	font-style: normal;
+}
+/* ==========================================================================
+   Portfolio Page
+   ========================================================================== */
+.folio-item {
+	float: left;
+	width: 20%;
+	margin: 0 0 2%;
+}
+.folio-item a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.folio-item img {
+	width: 95%;
+	height: auto;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+}
+.folio-item .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.4;
+	width: 95%;
+	height: 100%;
+	display: none;
+	border-radius: 3px;
+}
+.folio-item .image-layer {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	opacity: 0;
+	width: 95%;
+	height: 100%;
+	background-size: 50% auto !important;
+}
+.folio-item .image-layer.image-zoom { background: url(../i/layouts/zoom.png) no-repeat center; }
+.folio-item .image-layer.image-play { background: url(../i/layouts/play.png) no-repeat center; }
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+input[type=text], textarea {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 7px 10px;
+	width: 80%;
+	max-width: 250px;
+	resize: none;
+}
+.boxshadow input[type=text], .boxshadow textarea {
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4) inset;
+}
+html input[type=text].required, html textarea.required { border-color: red; }
+input.default, textarea.default { color: #888888; }
+.adr { margin-bottom: 10px; }
+input[type="submit"] {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: none;
+	margin: 0;
+	padding: 5px 25px;
+	border-radius: 3px;
+}
+input[type="submit"]:hover { opacity: 0.8; }
+.col-vcard {
+	float: left;
+	margin-right: 60px;
+}
+
+/* ==========================================================================
+   Color Themes
+   ========================================================================== */
+/* Orange */
+.orange { background: #f67c22; }
+.orange input[type="submit"] { background: #e74f04; }
+.orange .background { background: url(../i/layouts/orange/bg-lines.png) no-repeat top; }
+.orange .light {
+	position: absolute;
+	background: url(../i/layouts/orange/light.png) no-repeat center;
+}
+.orange .jspDrag { background: #e74f04; }
+.orange a { color: #e74f04; }
+.orange h1, .orange h2, .orange h3, .orange h4 { color: #e74f04; }
+.orange .tabs-links .active { color: #e74f04; }
+.orange .cv-item h3, .orange .cv-item h4 span { color: #963809; }
+.orange .skill div { background: #e74f04; }
+.orange .arrow-tr { background-image: url(../i/layouts/orange/arrow-tr.png); }
+.orange .arrow-bl { background-image: url(../i/layouts/orange/arrow-bl.png); }
+@media only screen and (max-width:480px) {
+.orange .arrow-bl { background-image: url(../i/layouts/orange/arrow-tr.png); }
+}
+
+/* Blue */
+.blue { background: #2b313d; }
+.blue input[type="submit"] { background: #1b63ae; }
+.blue .background {
+	background: url(../i/layouts/blue/bg.jpg) no-repeat top;
+	z-index: 0;
+}
+.blue .lights { z-index: 1; }
+.blue .light { background: url(../i/layouts/blue/light.png) no-repeat center; }
+.blue .jspDrag { background: #1b63ae; }
+.blue a { color: #1b63ae; }
+.blue h1, .blue h2, .blue h3, .blue h4 { color: #1b63ae; }
+.blue .tabs-links .active { color: #1b63ae; }
+.blue .cv-item h3, .blue .cv-item h4 span { color: #053260; }
+.blue .skill div { background: #1b63ae; }
+.blue .arrow-tr { background-image: url(../i/layouts/blue/arrow-tr.png); }
+.blue .arrow-bl { background-image: url(../i/layouts/blue/arrow-bl.png); }
+@media only screen and (max-width: 480px) {
+.blue .arrow-bl { background-image: url(../i/layouts/blue/arrow-tr.png); }
+}
+
+/* Black */
+.black { background: #111; }
+.black input[type="submit"] { background: #111; }
+.black .background {
+	background: url(../i/layouts/black/bg.jpg) no-repeat top;
+	z-index: 0;
+}
+.black .lights { z-index: 1; }
+.black .light { background: url(../i/layouts/black/light.png) no-repeat center; }
+.black .jspDrag { background: #111; }
+.black a { color: #111; }
+.black h1, .black h2, .black h3, .black h4 { color: #111; }
+.black .tabs-links .active { color: #111; }
+.black .cv-item h3, .black .cv-item h4 span { color: #333; }
+.black .skill div { background: #111; }
+.black .arrow-tr { background-image: url(../i/layouts/black/arrow-tr.png); }
+.black .arrow-bl { background-image: url(../i/layouts/black/arrow-bl.png); }
+@media only screen and (max-width: 480px) {
+.black .arrow-bl { background-image: url(../i/layouts/black/arrow-tr.png); }
+}
+
+/* White */
+.white { background: #ccc; }
+.white input[type="submit"] { background: #111; }
+.white .background {
+	background: url(../i/layouts/white/bg.jpg) no-repeat top;
+	z-index: 0;
+}
+.white .lights { z-index: 1; }
+.white .light { background: url(../i/layouts/white/light.png) no-repeat center; }
+.white .jspDrag { background: #111; }
+.white a { color: #111; }
+.white h1, .white h2, .white h3, .white h4 { color: #111; }
+.white .tabs-links .active { color: #111; }
+.white .cv-item h3, .white .cv-item h4 span { color: #333; }
+.white .skill div { background: #111; }
+.white .arrow-tr { background-image: url(../i/layouts/white/arrow-tr.png); }
+.white .arrow-bl { background-image: url(../i/layouts/white/arrow-bl.png); }
+.white .arrow-tr a, .white .arrow-bl a { color: #666; }
+@media only screen and (max-width: 480px) {
+.white .arrow-bl { background-image: url(../i/layouts/white/arrow-tr.png); }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+*text-indent:-9999px
+}
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%
+}
+.hidden {
+	display: none!important;
+	visibility: hidden
+}
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto
+}
+.invisible { visibility: hidden }
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table
+}
+.clearfix:after { clear: both }
+.clearfix { *zoom:1
+}

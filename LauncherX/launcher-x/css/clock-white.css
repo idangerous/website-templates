@@ -1,0 +1,99 @@
+@charset "utf-8";
+/*----------Clock----------- */
+.clock {
+	background:url(../images/common/shadow.png) no-repeat bottom;
+	padding-bottom:40px;
+	position:relative;
+}
+.clock-inner {
+	background:url(../images/clock-white/clock-bg.png) no-repeat;
+	width:570px;
+	height:140px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px 0px 0px 30px;
+	position:relative;
+}
+.days,.hours,.minutes,.seconds {
+	text-align:center;
+	float:left;
+	margin-right:40px;
+	font-size:18px;
+}
+.days,.seconds {
+	color:#333;
+}
+.hours,.minutes {
+	color:#a53232;	
+}
+.seconds {
+	margin:0px;
+}
+.d-bg {
+	background:url(../images/clock-white/3bg.png) no-repeat;
+	width:130px;
+	height:80px;
+	padding:2px;
+	position:relative;
+}
+.h-bg,.m-bg,.s-bg {
+	background:url(../images/clock-white/2bg.png) no-repeat;
+	width:90px;
+	height:80px;
+	position:relative;
+	padding:2px;
+}
+.second,.second1,.second2,.minute,.hour,.day {
+	font-size:60px;
+	font-weight:bold;
+	line-height:84px;
+	text-shadow:0px 0px 1px;
+	position:absolute;
+	left:0px;
+	top:-80px;
+	width:90px	
+}
+.second1 {
+	width:45px;	
+	text-align:right;
+}
+.second2{
+	width:45px;
+	left:45px;
+	text-align:left;
+}
+.divider {
+	position:absolute;
+	z-index:10;
+	color:#aaa;
+	left:307px;
+	top:45px;
+	font-size:60px;
+	font-weight:bold;
+	line-height:84px;
+	text-shadow:0px 0px 1px;
+}
+.day {
+	width:130px;
+}
+.s-wrap,.m-wrap,.h-wrap,.d-wrap {
+	overflow:hidden;
+	width:90px;
+	height:80px;
+	position:relative;
+}
+.mask2 {
+	background:url(../images/clock-white/2mask.png) no-repeat bottom;
+	width:90px;
+	height:80px;
+	position:absolute;left:2px;
+	top:2px;
+}
+.mask3 {
+	background:url(../images/clock-white/3mask.png) no-repeat bottom;
+	height:80px;
+	position:absolute;
+	left:2px;
+	top:2px;
+}
+.d-wrap,.day,.mask3 {width:130px;}

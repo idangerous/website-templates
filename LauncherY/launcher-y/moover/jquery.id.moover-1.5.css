@@ -1,0 +1,72 @@
+/*
+ * jQuery mOover v.1.5 CSS Part
+ 
+ * http://www.idangero.us/sliders/moover/
+ *
+ * Copyright 2012, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ 
+ * Licensed under the iDangero.us Limited Regular License (RL Limited)
+ * Licensing Terms: http://www.idangero.us/index.php?content=article&id=21
+ 
+ * Released on: May 7, 2012
+ */
+@charset "UTF-8";
+.moover {
+	position:relative;
+}
+.moover .moover-slide {
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+	overflow:hidden;
+	z-index:100;
+}
+.moover .moover-active-slide {
+	display:block;
+	z-index:90	
+}
+.moover .moover-slide .moover-text, .moover .moover-text > p, .moover .moover-TW, .moover .moover-slide > img {
+	-moz-transition-property:all;
+	-webkit-transition-property:all;
+	-ms-transition-property:all;
+	-o-transition-property:all;
+	transition-property:all;
+}
+.moover .moover-slide .moover-text, .moover .moover-slide > img {
+	position:absolute;
+	z-index:5;
+	max-width:none;
+	min-width:none;
+}
+.moover .moover-slide p {
+	margin:0;
+	text-align:center
+}
+.moover .moover-text {
+	margin:0;
+	padding:0;
+}
+.moover .moover-TW {
+	display:inline-block;
+}
+.moover .moover-absolute p {
+	position:absolute;
+}
+.moover-slide {
+	width:100%;
+	height:100%;	
+}
+/* Set mOover's width and height! */
+.moover{
+	width:900px;
+	height:350px;
+}
+/* Preloader */
+.moover-loading {
+	background-image:url(moover-preloader.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:center center !important;	
+}

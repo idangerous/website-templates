@@ -1,0 +1,1 @@
+<h4 class="notification"><span class="message-sent"></span>Thanks! Your message has been successfully sent.</h4>

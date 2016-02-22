@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'arial_rounded_mt_boldregular';
+    src: url('../font/arial_rounded_bold-webfont.eot');
+    src: url('../font/arial_rounded_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/arial_rounded_bold-webfont.woff') format('woff'),
+         url('../font/arial_rounded_bold-webfont.ttf') format('truetype'),
+         url('../font/arial_rounded_bold-webfont.svg#arial_rounded_mt_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+//Theme font
+.font() {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+//Headings font
+.headingFont(){
+    font-family: 'arial_rounded_mt_boldregular', 'Arial Rounded MT', Arial, sans-serif;
+    font-weight: normal;
+}
+
+//Orange:
+@siteColor: #f87e1c;
+
+//Lime:
+//@siteColor: #88b20b;
+
+//Berry
+//@siteColor: #e31848;
+
+//Cyan
+//@siteColor: #07a6ce;
+
+//Blue
+//@siteColor: #305ddf;
+
+//Grey
+//@siteColor: #333;
+
+//Silver
+//@siteColor: #ddd;
+
+@headerTextColor: #000;
+@footerTextColor: #fff;
+//@footerTextColor: #333;
+//@headerTextColor: #fff;
+
+@siteWidth: 960px;
+
+.retina(@bg, @width, @height:auto) {
+    @media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+        background-image: url(@bg);
+        -webkit-background-size: @width @height;
+        background-size: @width @height;
+    }
+}
+.borderBox(){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.transform(@t) {
+    -webkit-transform: @t;
+    -moz-transform: @t;
+    -ms-transform: @t;
+    -o-transform: @t;
+    transform: @t;
+}
+.transition(@t) {
+    -webkit-transition-duration: @t;
+    -moz-transition-duration: @t;
+    -ms-transition-duration: @t;
+    -o-transition-duration: @t;
+    transition-duration: @t;
+}
+.radial(@center, @corners) {
+    background-image: -moz-radial-gradient(center, ellipse cover,  @center 0%, @corners 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,@center), color-stop(100%,@corners)); /* Chrome,Safari4+ */
+    background-image: -webkit-radial-gradient(center, ellipse cover,  @center 0%,@corners 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-radial-gradient(center, ellipse cover,  @center 0%,@corners 100%); /* Opera 12+ */
+    background-image: -ms-radial-gradient(center, ellipse cover,  @center 0%,@corners 100%); /* IE10+ */
+    background-image: radial-gradient(ellipse at center, @center 0%, @corners 100%); /* W3C */
+}

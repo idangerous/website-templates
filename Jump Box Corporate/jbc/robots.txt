@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /content/
+Disallow: /css/
+Disallow: /folio/
+Disallow: /images/
+Disallow: /includes/
+Disallow: /scripts/

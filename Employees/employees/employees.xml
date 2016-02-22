@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+
+	<person id="vk">
+		<name>Vladimir Kharlampidi</name>
+		<firstname>Vladimir</firstname>
+		<position>CEO &amp; Founder</position>
+		<department>Managment, IT</department>
+		<avatar>i/demo/avatar-1.jpg</avatar>
+		<slogan>"Be yourself, everyone else is already taken!"</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>tasty food, good cars, girls, life, iDangero.us</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<website>http://www.idangero.us</website>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Vladimir</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="aa">
+		<name>Anton Alexeev</name>
+		<firstname>Anton</firstname>
+		<position>Sr. Back-end Developer, Co-Founder</position>
+		<department>IT</department>
+		<avatar>i/demo/avatar-2.jpg</avatar>
+		<slogan>"You only live once, but if you do it right, once is enough!"</slogan>
+		<born>12.01.1985</born>
+		<worksince>May, 2010</worksince>
+		<likes>football, PHP, ROR</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Anton</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="ee">
+		<name>Elena Evtushenko</name>
+		<firstname>Elena</firstname>
+		<position>Accounter, Co-Founder</position>
+		<department>Accounting</department>
+		<avatar>i/demo/avatar-3.jpg</avatar>
+		<slogan>"Don't cry because it's over, smile because it happened."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>read books, glamour magazins</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Elena</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a elit ut nisi porttitor posuere ut ut libero. Integer cursus tempus diam, a fringilla metus iaculis a.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="veekey">
+		<name>VK</name>
+		<firstname>Vee</firstname>
+		<position>Sr. Front-end Developer, Co-Founder</position>
+		<department>IT</department>
+		<avatar>i/demo/avatar-4.jpg</avatar>
+		<slogan>"So many books, so little time."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>HTML 5, coding, interesting project</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Vee</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="mk">
+		<name>Mr. Knoolidge</name>
+		<firstname>Knoolidge</firstname>
+		<position>SEO Ninja</position>
+		<department>SEO</department>
+		<avatar>i/demo/avatar-knoolidg.jpg</avatar>
+		<slogan>"Be the change that you wish to see in the world."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>SEO, Google, Bing, Yahoo</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Mr. Knoolidge</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="mm">
+		<name>Mistakeman</name>
+		<firstname>Mistakeman</firstname>
+		<position>SEO Beginner</position>
+		<department>SEO</department>
+		<avatar>i/demo/avatar-mistak.jpg</avatar>
+		<slogan>"We are all in the gutter, but some of us are looking at the stars."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>good drinks</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Mistakeman</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="arnold">
+		<name>Arnold</name>
+		<firstname>Arnold</firstname>
+		<position>Front-end Developer</position>
+		<department>IT</department>
+		<avatar>i/demo/avatar-coach.jpg</avatar>
+		<slogan>"That which does not kill us makes us stronger."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>HTML 5</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Arnold</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="jb">
+		<name>Jessica Beausmart</name>
+		<firstname>Jessica</firstname>
+		<position>Adman</position>
+		<department>Advertising</department>
+		<avatar>i/demo/avatar-girl.jpg</avatar>
+		<slogan>"If you can make a girl laugh, you can make her do anything."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>tasty food, boys</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Jessica</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="js">
+		<name>Joahn Smith</name>
+		<firstname>Joahn</firstname>
+		<position>Jr. Adman</position>
+		<department>Advertising</department>
+		<avatar>i/main/no-avatar.jpg</avatar>
+		<slogan>"Be yourself, everyone else is already taken!"</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>sleep, eat and drink;)</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Joahn</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="jd">
+		<name>John Doe</name>
+		<firstname>John</firstname>
+		<position>Designer</position>
+		<department>IT</department>
+		<avatar>i/main/no-avatar.jpg</avatar>
+		<slogan>"That which does not kill us makes us stronger."</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>London streets, talk, IT news</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About John</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	<person id="bd">
+		<name>Brian Doe</name>
+		<firstname>Brian</firstname>
+		<position>Jr. Developer</position>
+		<department>IT</department>
+		<avatar>i/main/no-avatar.jpg</avatar>
+		<slogan>"I'm just learning"</slogan>
+		<born>03.06.1986</born>
+		<worksince>May, 2010</worksince>
+		<likes>journey, sea, France</likes>
+		<lives>Rostov-na-Donu, Russia</lives>
+		<!--Links:-->
+		<twitter>http://twitter.com/idangerous/</twitter>
+		<facebook>http://facebook.com/idangero.us/</facebook>
+		<linkedin>http://linkedin.com/</linkedin>
+		<!--Bio-->
+		<bio><![CDATA[
+			<h1>About Brian</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+			<p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+		]]></bio>
+	</person>
+	
+	
+	
+</employees>

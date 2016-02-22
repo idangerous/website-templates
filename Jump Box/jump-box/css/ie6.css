@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.menu-link {
+	float:left;
+}
+.footer-link {
+	font-family:ChunkFive, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display:inline;
+}
+.item-descr,.small-heading {
+    display: block;
+	position:relative;
+	width:100%;
+}
+span.period {
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:block;
+}
+.bottom-mods .module.first {
+	margin-left:5px;
+}
+.button-m {
+	display:inline-block;
+}
+.button {
+	margin-right:0px;
+	display:inline-block;
+}

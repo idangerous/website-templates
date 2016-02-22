@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Employees</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/employees.css">
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="logo"><img src="i/main/logo.png" width="290" height="64"></div>
+    </header>
+    <nav>
+      <span>Filter By Department::</span>
+      <a href="#" data-filter="*" class="active">All Departments</a>
+      <a href="#" data-filter="management">Management</a>
+      <a href="#" data-filter="acc">Accounting</a>
+      <a href="#" data-filter="advert">Advertising</a>
+      <a href="#" data-filter="it">IT</a>
+      <a href="#" data-filter="seo">SEO</a>
+      <div class="clearfix"></div>
+    </nav>
+    <div class="content">
+      <div class="page-content">
+        <h2 class="page-title">Thumbnails With Filter</h2>
+        <p>Here comes some description. You can put here any HTML content, images, videos etc.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non tortor et lacus lacinia condimentum. Nunc non turpis nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut congue velit id ligula cursus facilisis luctus nisi dapibus.</p>
+      </div>
+      <div class="filter-content" style="position:relative;">
+        <div class="person person-thumb" data-filter="management it" data-id="vk"></div>
+        <div class="person person-thumb" data-filter="management it" data-id="aa"></div>
+        <div class="person person-thumb" data-filter="management acc" data-id="ee"></div>
+        <div class="person person-thumb" data-filter="management it" data-id="veekey"></div>  
+        <div class="person person-thumb" data-filter="advert" data-id="jb"></div>
+        <div class="person person-thumb" data-filter="advert" data-id="js"></div>
+        <div class="person person-thumb" data-filter="it" data-id="jd"></div>
+        <div class="person person-thumb" data-filter="it" data-id="bd"></div>
+        <div class="person person-thumb" data-filter="it" data-id="arnold"></div>
+        <div class="person person-thumb" data-filter="seo" data-id="mk"></div>
+        <div class="person person-thumb" data-filter="seo" data-id="mm"></div>
+      </div>      
+    </div>
+    <footer>&copy; 2012 "Employees" Premium Facebook App by <a href="http://www.idangero.us" target="_blank">iDangero.us</a>. All Rights Reserved.</footer>
+  </div>
+  <!-- Person template -->
+  <div class="person-template" style="display: none;">
+  	<a href="#" class="open-popup">
+      <div class="person-avatar">
+        <img data-attr="{'src':'avatar'}">
+        <div class="avatar-mask"></div>
+      </div>
+    </a>
+    <div class="clearfix"></div>
+    <p class="person-name"><a href="#" class="open-popup" data-insert="name"></a><br><span class="person-position" data-insert="position"></span></p>  	
+  	<div class="clearfix"></div>
+  </div>
+  <!-- End Person Template -->
+  
+  <!-- Popup -->
+  <div class="popup-overlay"></div>
+  <div class="popup-view">
+  	<div class="popup">
+  		<div class="popup-content">
+  			<a href="#" class="close-popup"></a>
+  			<div class="popup-left">
+	  			<div class="popup-avatar">
+	  				<img data-attr="{'src':'avatar'}">
+	  			</div>
+	  			<div class="popup-links">
+                	<p data-check="twitter"><a class="external" data-attr="{'href':'twitter'}" target="_blank"><span data-replace="firstname"></span> on Twitter</a></p>
+                    <p data-check="facebook"><a class="external" data-attr="{'href':'facebook'}" target="_blank">Facebook Page</a></p>
+                    <p data-check="linkedin"><a class="external" data-attr="{'href':'linkedin'}" target="_blank">LinkedIn Profile</a></p>
+                    <p><a href="#" class="open-popup-content bordered"><span data-replace="firstname"></span>'s Bio</a></p>
+                </div>
+  			</div>
+            <div class="popup-info">
+  				<h2 class="popup-name" data-insert="name"></h2>
+  				<h3 class="popup-position" data-insert="position"></h3>
+  				<ul class="info-list">
+	  				<li data-check="department"><i>Department:</i> <b data-insert="department"></b></li>
+	  				<li data-check="worksince"><i>Work since:</i> <b data-insert="worksince"></b></li>
+	  				<li data-check="slogan"><i>Slogan:</i> <b data-insert="slogan"></b></li>
+	  				<li data-check="likes"><i>Likes:</i> <b data-insert="likes"></b></li>
+	  				<li data-check="lives"><i>Lives in:</i> <b data-insert="lives"></b></li>
+	  				<li data-check="born"><i>Born date:</i> <b data-insert="born"></b></li>
+	  				<li data-check="website"><i>Website:</i> <b><a class="external" data-insert="website" data-attr="{'href':'website'}" target="_blank"></a></b></li>
+  				</ul>
+  			</div>
+  			<div class="clearfix"></div>
+  			<div class="popup-loader" data-check="bio">
+  				<div class="popup-loader-content">
+                	<a class="close-popup-content" href="#"></a>
+  					<span data-replace="bio"></span>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--End Popup -->
+  
+  <!-- scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/config-thumbs-filter.js"></script>
+  <script src="js/employees.js"></script>
+  <!-- end scripts -->
+
+</body>
+</html>

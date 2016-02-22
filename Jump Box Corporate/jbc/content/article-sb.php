@@ -1,0 +1,9 @@
+<div class="left-col">
+<h2 class="content-heading">jBox.Corporate Article With Sidebar</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt convallis sapien, quis euismod quam dignissim eu. Donec eu aliquet ante. Proin vel nunc enim. In eget ligula vel sapien commodo congue. Nulla tristique turpis non elit eleifend eget cursus arcu convallis. Aenean vel turpis ipsum, sed imperdiet libero. Donec non libero felis, vitae semper lacus. Curabitur blandit lacus vitae magna aliquet ut bibendum nulla varius. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque blandit leo quis velit pretium dignissim. Vestibulum nunc orci, pharetra vitae scelerisque vitae, bibendum nec urna. Duis vitae sem non leo laoreet adipiscing ac non erat. Vivamus sed luctus erat. Integer eu elit a dolor convallis commodo. Cras et rhoncus lorem. Pellentesque dapibus venenatis ligula at tincidunt. Nunc eget risus eros, vel rhoncus ante. Nunc a ligula augue, sit amet dictum turpis.</p>
+<p>Vestibulum sollicitudin congue consequat. Proin vestibulum massa non purus porta sed interdum turpis auctor. Donec porta dignissim velit, nec consequat tellus auctor a. Cras dictum libero non elit pulvinar pellentesque. Donec faucibus nulla nec massa pharetra quis euismod neque semper. Nullam nunc leo, iaculis consequat mattis id, dictum in nulla. Integer tortor leo, rutrum ut tempor scelerisque, aliquet a sapien. Etiam sodales orci vel neque tincidunt iaculis. Maecenas nec tincidunt dolor. Morbi cursus erat vitae ligula imperdiet mollis. Cras non condimentum lacus. Sed tincidunt rutrum odio vitae facilisis. Fusce ultrices risus id massa feugiat lobortis.</p>
+</div>
+<div id="sidebar">
+  <?php include("sidebar.php") ?>
+</div>
+<div class="clear"></div>

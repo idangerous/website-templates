@@ -1,0 +1,1 @@
+<img src="images/features/ft1.png" width="505" height="103" alt="Simply" />

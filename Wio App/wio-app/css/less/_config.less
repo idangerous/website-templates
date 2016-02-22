@@ -1,0 +1,67 @@
+
+
+.font() {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.headingFont(){
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.subHeadingFont() {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;   
+}
+//Blue:
+@siteColor: #2189cb;
+
+//Red:
+//@siteColor: #bd1b1b;
+
+//Purple:
+//@siteColor: #c24da0;
+
+//Lime:
+//@siteColor: #52c04a;
+
+//Orange:
+//@siteColor: #f08d00;
+
+@siteWidth: 1200px;
+
+@logoUrl: '../i/logo.png';
+@logoUrl2x: '../i/logo@2x.png';
+@logoWidth:74px;
+@logoHeight:28px;
+
+@logoBigUrl: '../i/logo-big.png';
+@logoBigUrl2x: '../i/logo-big@2x.png';
+@logoBigWidth: 262px;
+@logoBigHeight: 100px;
+
+
+.retina(@bg, @width, @height:auto) {
+    @media all and (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+        background-image: url(@bg);
+        -webkit-background-size: @width @height;
+        background-size: @width @height;
+    }
+}
+.borderBox(){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.transform(@t) {
+    -webkit-transform: @t;
+    -moz-transform: @t;
+    -ms-transform: @t;
+    -o-transform: @t;
+    transform: @t;
+}
+.transition(@t) {
+    -webkit-transition-duration: @t;
+    -moz-transition-duration: @t;
+    -ms-transition-duration: @t;
+    -o-transition-duration: @t;
+    transition-duration: @t;
+}

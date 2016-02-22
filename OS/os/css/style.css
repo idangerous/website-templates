@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+/* --- Common Rules --- */
+body {
+	background:#10384a url(../images/bg.png) repeat-x center top;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	font-size:13px;
+	line-height:1.5em;
+	overflow:hidden;
+	color:#fff;
+}
+#wrapper {
+	background:url(../images/bg-image.jpg) no-repeat center top;
+	overflow:hidden;
+	min-height:780px;
+	height:100%;
+	width:100%;
+}
+p { margin:0px 0px 10px; }
+h1, h2, h3, h4, h5, h6 { margin:0px 0px 10px; }
+h5 { text-transform:uppercase }
+h2.content-heading {
+	font-size:160%;
+	margin-bottom:15px;
+}
+h3.window-title {
+	font-size:100%;
+	font-weight:bold;
+	line-height:30px;
+	margin:0;
+	color:#FFFFFF;
+	text-shadow:0 0 1px #000000;
+}
+img { border:none }
+a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#ffde00;
+}
+ul, ol {
+	margin:0 0 10px;
+	padding:0 0 0 20px;
+}
+.clear {
+	clear:both;
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+}
+.clearfix:after {
+	clear:both;
+	content:" ";
+	display:block;
+	font-size:0;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+}
+.clearfix { display:inline-block; }
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/* --- Window Styling --- */
+.window {
+	min-width:200px;
+	min-height:50px;
+	width:600px;
+	display:block;
+	overflow:hidden;
+	position:absolute!important;
+	z-index:1000;
+	color:#fff;
+}
+.w-tbl {
+	padding-left:10px;
+	background:url(../images/black/window-top.png) no-repeat left top;
+}
+.w-tbl:hover { cursor:move; }
+.w-tbr {
+	padding-right:10px;
+	background:url(../images/black/window-top.png) no-repeat right bottom;
+}
+.w-tbm {
+	height:30px;
+	overflow:hidden;
+	background:url(../images/black/window-top.png) repeat-x left -30px;
+}
+.w-tl {
+	padding-left:10px;
+	background:url(../images/black/window-corners.png) no-repeat left top;
+}
+.w-tr {
+	padding-right:10px;
+	background:url(../images/black/window-corners.png) no-repeat right -20px;
+}
+.w-tm {
+	height:10px;
+	display:block;
+	background:url(../images/black/window-corners.png) repeat-x left -10px;
+}
+.w-ml {
+	padding-left:1px;
+	min-width:199px;
+	overflow:hidden;
+	position:static !important;
+	background:url(../images/black/window-lr.png) repeat-y left top;
+}
+.w-mr {
+	padding-right:1px;
+	height:100%;
+	background:url(../images/black/window-lr.png) repeat-y right top;
+}
+.w-mm {
+	height:100%;
+	background:url(../images/black/window-bg.png) repeat;
+}
+.w-content { padding:20px; }
+.w-bl {
+	padding-left:10px;
+	background:url(../images/black/window-corners.png) no-repeat left -30px;
+}
+.w-br {
+	padding-right:10px;
+	background:url(../images/black/window-corners.png) no-repeat right bottom;
+}
+.w-bm {
+	height:10px;
+	background:url(../images/black/window-corners.png) repeat-x left -40px;
+}
+.close {
+	position:absolute;
+	right:10px;
+	top:0px;
+	cursor:pointer;
+}
+.minimize, .expand {
+	position:absolute;
+	right:35px;
+	top:0px;
+	cursor:pointer;
+}
+/* --- Shortcuts Section --- */
+#shortcuts {
+	width:800px;
+	position:absolute;
+	bottom:50px;
+	overflow:hidden;
+	text-align:center;
+	height:110px;
+}
+#shortcuts .w-content {
+	padding:5px;
+	overflow:hidden;
+}
+.shortcut {
+	display:inline-block;
+	height:80px;
+	vertical-align:bottom;
+	position:relative;
+	margin:0px 2px;
+}
+.shortcut span {
+	display:none;
+	position:absolute;
+	padding:2px 5px;
+	z-index:2000;
+	bottom:0px;
+	left:40px;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	line-height:12px;
+	color:#fff;
+	background:#000;
+	border:1px solid #aaa;
+}
+/* --- Forms --- */
+input.text {
+ border  font-family:inherit;
+	padding:5px;
+	width:400px;
+	border:1px solid #fff;
+}
+textarea.textarea {
+	border-family:inherit;
+	font-size:inherit;
+	padding:5px;
+	width:400px;
+	border:1px solid #fff;
+}
+.required { background:none repeat scroll 0 0 #FCD9D9; }
+.button-l {
+	display:inline-block;
+	height:20px;
+	line-height:20px;
+	padding-left:10px;
+	background:url(../images/black/button.png) no-repeat scroll 0 0 transparent;
+}
+.button-m {
+	display:block;
+	height:20px;
+	margin-right:10px;
+	background:url(../images/black/button.png) repeat-x scroll left -20px transparent;
+}
+input[type="button"], input[type="submit"], a.button, span.button {
+	border:medium none;
+	display:block;
+	font-family:inherit;
+	font-size:12px;
+	font-weight:bold;
+	height:20px;
+	line-height:20px;
+	margin:0 -10px;
+	padding:0 10px;
+	background:url(../images/black/button.png) no-repeat scroll right -40px transparent;
+	color:#FFFFFF;
+}
+.button-l:hover { background-position:0 -60px; }
+.button-m:hover { background-position:0 -80px; }
+input[type="button"]:hover, input[type="submit"]:hover, a.button:hover, span.button:hover {
+	background-position:right -100px;
+	cursor:pointer;
+}
+/* --- Footer --- */
+#footer {
+	font-size:10px;
+	font-weight:bold;
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	color:#aaa;
+}
+#footer a { color:#aaa; }
+/* --- Ajax Loader --- */
+.ajax-loader {
+	width:60px;
+	height:60px;
+	position:absolute;
+	z-index:6000;
+	display:block;
+	background:url(../images/ajax-bg.png) repeat-x #aaa;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-30px;
+	margin-top:-30px;
+	box-shadow:0px 0px 20px 2px #000
+}

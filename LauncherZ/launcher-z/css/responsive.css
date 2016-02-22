@@ -1,0 +1,103 @@
+@media only screen and (max-width: 600px) {
+  .header,
+  .footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 0;
+    left: 0;
+  }
+  .popup {
+    width: 80%;
+    padding: 5%;
+    left: 0;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+  .col-half {
+    width: auto;
+    float: none;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .subscribe input[type="text"] {
+    float: none;
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav {
+    position: static;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .nav li {
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 0;
+    float: none;
+    text-align: center;
+    display: block;
+  }
+  .clock {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .clock .title {
+    text-align: center;
+    position: static;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .clock .numbers {
+    font-size: 35px;
+    float: left;
+    position: static;
+    width: 25%;
+    height: auto;
+    line-height: 35px;
+  }
+  .clock .numbers b {
+    display: block;
+    font-size: 15px;
+    line-height: 15px;
+    position: static;
+    margin: 10px 0 20px;
+  }
+  .clock .orbit {
+    top: -100px;
+    left: 50%;
+    margin-left: -150px;
+  }
+  .header,
+  .low-height .header {
+    margin-bottom: 30px;
+  }
+  .footer,
+  .low-height .footer {
+    margin-top: 50px !important;
+    text-align: center;
+  }
+  .footer .social {
+    float: none;
+  }
+  .footer .copy {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  
+}

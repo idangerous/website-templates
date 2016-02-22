@@ -1,0 +1,3 @@
+<h2 class="content-heading">Imagine Box Website Template</h2>
+<p style="float:left;margin-right:20px;margin-bottom:20px"><img src="images/boxes/cube-b.jpg" width="300"/></p>
+<p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel nibh vel justo bibendum tempus. Morbi enim mauris, semper accumsan gravida vel, aliquet at risus. Suspendisse id lorem justo. Pellentesque scelerisque nibh id metus eleifend a egestas quam gravida.</p> <p align="justify">Nulla cursus dapibus nunc vitae accumsan. Proin sed sem quis nibh ultricies commodo. Donec mi arcu, viverra eget facilisis eget, tempor sed lectus.</p>

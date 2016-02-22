@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/launcher.css" />
+<script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="scripts/launcher.js"></script>
+<script type="text/javascript">
+var isIE6=false;
+</script>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+<script type="text/javascript">
+var isIE6=true;
+</script>
+<![endif]-->
+<title>Launcher</title>
+</head>
+<body>
+<div id="background"></div>
+<div id="wrapper">
+  <div class="clock">
+    <h1 class="will-open">We will open after</h1>
+    <div class="clock-inner">
+      <div class="divider">:</div>
+      <div class="days">
+        <p>Days</p>
+        <div class="d-bg">
+          <div class="d-wrap">
+            <div class="day" style="top:0px;"></div>
+          </div>
+          <div class="mask3"></div>
+        </div>
+      </div>
+      <div class="hours">
+        <p>Hours</p>
+        <div class="h-bg">
+          <div class="h-wrap">
+            <div class="hour" style="top:0px;"></div>
+          </div>
+          <div class="mask2"></div>
+        </div>
+      </div>
+      <div class="minutes">
+        <p>Minutes</p>
+        <div class="m-bg">
+          <div class="m-wrap">
+            <div class="minute" style="top:0px;"></div>
+          </div>
+          <div class="mask2"></div>
+        </div>
+      </div>
+      <div class="seconds">
+        <p>Seconds</p>
+        <div class="s-bg">
+          <div class="s-wrap">
+            <div class="second1" style="top:0px;"></div>
+            <div class="second2" style="top:0px;"></div>
+          </div>
+          <div class="mask2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button-bg"> <span id="openContent" class="button-l"><span class="button-m"><span style="padding:0px 60px" class="button">Won't wait?</span></span></span> </div>
+  <div class="content-wrap">
+    <div class="content-top">
+      <div class="content-bot">
+        <div class="content-mid">
+          <div class="left-col">
+            <h2 class="heading" style="color:#555">About Launcher</h2>
+            <ul class="ul-links">
+              <li><a class="popup" href="#wil">What is Launcher</a></li>
+              <li><a class="popup" href="#why_wait">Why you should wait</a></li>
+              <li><a class="popup" href="#products">Launcher featured products</a></li>
+              <li><a class="popup" href="#services">Launcher Services</a></li>
+              <li><a class="popup" href="#contacts">How to find us</a></li>
+              <li><a class="popup" href="#lorem">Lorem ipsum dolor</a></li>
+            </ul>
+          </div>
+          <div class="right-col">
+            <h2 class="heading">Be the first to know</h2>
+            <p>Give us your email address and we will inform you when our site will open:</p>
+            <div class="sendEmail">
+              <input value="Your email here" type="text" id="email" onkeyup="validateEmail()" size="20" />
+              <span class="button-l" id="sendEmail"><span class="button-m"><span style="padding:0px 40px" class="button">Send</span></span></span>
+              <div class="message-status"></div>
+            </div>
+            <div class="clear"></div>
+            <h2 class="heading">Launcher.Social</h2>
+            <div class="bar-icons"> 
+              <a href="#"> <img class="bar-icon" src="images/social/twitter.png" width="40" alt="Twitter" title="Twitter" /> <span>Twitter</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/facebook.png" width="40" height="63" alt="Facebook" title="Facebook" /> <span>Facebook</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/flickr.png" width="40" height="63" alt="Flickr" title="Flickr" /> <span>Flickr</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/delicious.png" width="40" height="63" alt="Delicious" title="Delicious" /> <span>Delicious</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/blogger.png" width="40" height="63" alt="Blogger" title="Blogger" /> <span>Blogger</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/myspace.png" width="40" height="63" alt="My Space" title="My Space" /> <span>My&nbsp;Space</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/digg.png" width="40" height="63" alt="DIGG" title="DIGG" /> <span>DIGG</span> </a> 
+              <a href="#"> <img class="bar-icon" src="images/social/ytube.png" width="40" height="63" alt="YouTube" title="YouTube" /> <span>You&nbsp;Tube</span> </a> </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dark-layer"></div>
+<div id="popup"> 
+  <img class="close-popup" src="images/layouts/close.png" width="32" height="32" alt="X" />
+  <div class="popup-content"></div>
+</div>
+<div style="display:none;" class="dummy-block"></div>
+</body>
+</html>

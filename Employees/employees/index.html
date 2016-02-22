@@ -1,0 +1,163 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Employees</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/employees.css">
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  
+  <div class="wrapper">
+    
+    <header>
+      <div class="logo"><img src="i/main/logo.png" width="290" height="64"></div>
+    </header>
+    <nav>
+      <span>Departments:</span>
+      <a href="#" data-page="management" class="active">Management</a>
+      <a href="#" data-page="acc">Accounting</a>
+      <a href="#" data-page="advert">Advertising</a>
+      <a href="#" data-page="it">IT</a>
+      <a href="#" data-page="seo">SEO</a>
+      <div class="clearfix"></div>
+    </nav>
+    <div class="content">
+      <div id="management" class="page active-page">
+      	<h1 class="page-title">Management Department</h1>
+        <div class="page-content">
+        	<p>This is a department description. You can put here any HTML content, images, videos etc.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada suscipit nulla, nec mattis sapien dignissim non. Etiam eu risus eget purus iaculis vestibulum in a purus.</p>
+            <p>Aliquam mattis venenatis sem, ac tristique dolor volutpat eget. In felis arcu, tempus eu fringilla dignissim, mollis vitae massa</p>
+        </div>
+        <div class="person" data-id="vk"></div>
+        <div class="person person-last" data-id="aa"></div>
+        <div class="clearfix"></div>
+        <div class="person" data-id="ee"></div>
+        <div class="person person-last" data-id="veekey"></div>
+        <div class="clearfix"></div>
+      </div>
+      
+      <div id="acc" class="page">
+      	<h1 class="page-title">Accounting Department</h1>
+        <div class="page-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada suscipit nulla, nec mattis sapien dignissim non. Etiam eu risus eget purus iaculis vestibulum in a purus.</p>
+        </div>
+        <div class="person" data-id="ee"></div>
+        <div class="clearfix"></div>
+      </div>
+      
+      <div id="advert" class="page">
+      	<h1 class="page-title">Advertising Department</h1>
+        <div class="page-content">
+            <p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+        </div>
+        <div class="person" data-id="jb"></div>
+        <div class="person person-last" data-id="js"></div>
+        <div class="clearfix"></div>
+      </div>
+      
+      <div id="it" class="page">
+      	<h1 class="page-title">IT Department</h1>
+        <div class="page-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada suscipit nulla, nec mattis sapien dignissim non. Etiam eu risus eget purus iaculis vestibulum in a purus.</p>
+        </div>
+        <div class="person" data-id="vk"></div>
+        <div class="person person-last" data-id="aa"></div>
+        <div class="clearfix"></div>
+        <div class="person" data-id="veekey"></div>
+        <div class="person person-last" data-id="jd"></div>
+        <div class="clearfix"></div>
+        <div class="person" data-id="bd"></div>
+        <div class="person person-last" data-id="arnold"></div>
+      </div>
+      
+      <div id="seo" class="page">
+      	<h1 class="page-title">SEO Department</h1>
+        <div class="page-content">
+            <p>Quisque vulputate urna sit amet ligula tincidunt egestas at quis leo. Nunc erat turpis, aliquet non pharetra vel, vehicula et nibh. Nunc tincidunt, orci vel pulvinar egestas, orci ipsum imperdiet ante, a lobortis odio metus quis purus. Vestibulum quis justo at quam tristique feugiat a ac ligula. Sed est augue, egestas id pretium sed, placerat et magna. Aenean porta tincidunt augue at ultricies.</p>
+        </div>
+        <div class="person" data-id="mk"></div>
+        <div class="person person-last" data-id="mm"></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <footer>&copy; 2012 "Employees" Premium Facebook App by <a href="http://www.idangero.us" target="_blank">iDangero.us</a>. All Rights Reserved.</footer>
+  </div>
+  <!-- Person template -->
+  <div class="person-template" style="display: none;">
+  	<div class="person-mask"></div>
+  	<div class="person-avatar">
+      <img data-attr="{'src':'avatar'}">
+      <div class="avatar-mask"></div>
+    </div>
+  	<div class="person-info">
+  		<p class="person-name" data-insert="name"></p>
+  		<p class="person-position" data-insert="position"></p>
+  		<div class="person-slogan">
+  			<div class="person-slogan-angle"></div>
+  			<span data-replace="slogan"></span>
+  		</div>
+  	</div>
+  	<a class="open-popup learn-more" href="#"></a>
+  	<div class="clearfix"></div>
+  </div>
+  <!-- End Person Template -->
+  
+  <!-- Popup -->
+  <div class="popup-overlay"></div>
+  <div class="popup-view">
+  	<div class="popup">
+  		<div class="popup-content">
+  			<a href="#" class="close-popup"></a>
+  			<div class="popup-left">
+	  			<div class="popup-avatar">
+	  				<img data-attr="{'src':'avatar'}">
+	  			</div>
+	  			<div class="popup-links">
+                	<p data-check="twitter"><a class="external" data-attr="{'href':'twitter'}" target="_blank"><span data-replace="firstname"></span> on Twitter</a></p>
+                    <p data-check="facebook"><a class="external" data-attr="{'href':'facebook'}" target="_blank">Facebook Page</a></p>
+                    <p data-check="linkedin"><a class="external" data-attr="{'href':'linkedin'}" target="_blank">LinkedIn Profile</a></p>
+                    <p><a href="#" class="open-popup-content bordered"><span data-replace="firstname"></span>'s Bio</a></p>
+                </div>
+  			</div>
+            <div class="popup-info">
+  				<h2 class="popup-name" data-insert="name"></h2>
+  				<h3 class="popup-position" data-insert="position"></h3>
+  				<ul class="info-list">
+	  				<li data-check="department"><i>Department:</i> <b data-insert="department"></b></li>
+	  				<li data-check="worksince"><i>Work since:</i> <b data-insert="worksince"></b></li>
+	  				<li data-check="slogan"><i>Slogan:</i> <b data-insert="slogan"></b></li>
+	  				<li data-check="likes"><i>Likes:</i> <b data-insert="likes"></b></li>
+	  				<li data-check="lives"><i>Lives in:</i> <b data-insert="lives"></b></li>
+	  				<li data-check="born"><i>Born date:</i> <b data-insert="born"></b></li>
+	  				<li data-check="website"><i>Website:</i> <b><a class="external" data-insert="website" data-attr="{'href':'website'}" target="_blank"></a></b></li>
+  				</ul>
+  			</div>
+  			<div class="clearfix"></div>
+  			<div class="popup-loader" data-check="bio">
+  				<div class="popup-loader-content">
+                	<a class="close-popup-content" href="#"></a>
+  					<span data-replace="bio"></span>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--End Popup -->
+  
+  <!-- scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/config-default.js"></script>
+  <script src="js/employees.js"></script>
+  <!-- end scripts -->
+
+</body>
+</html>
